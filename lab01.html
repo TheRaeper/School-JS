@@ -3,9 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <title>Lab 01</title>
+        <!--dit script werkt met variabelen
+            auteur: Rae
+            datum: 22-11-2017
+        -->
     </head>
     <body>
+        <h2> Lab 01 </h2>
+        <h3> Factuur </h3>
         <script>
+            klantnaam = prompt("Rae") //heir zou nu een naam moeten komen
+            aantal = parseInt(prompt("Aantal boeken te bestellen")) //wrm de fck pakt ie geen aantal
+            titel = "JavaScript"
+            prijs = 29.90;
+            document.write("<br> Bedankt voor je bestelling: " + klantnaam + "<br> Boektitel is: " + titel + "<br> Aantal te bestellen: " + aantal + "<br> Prijs per boek is: " + prijs.toFixed(2))
         </script>
     </body>
 </html>
