@@ -12,11 +12,17 @@
         <h2> Lab 01 </h2>
         <h3> Factuur </h3>
         <script>
-            klantnaam = prompt("Rae") //heir zou nu een naam moeten komen
-            aantal = parseInt(prompt("Aantal boeken te bestellen")) //wrm de fck pakt ie geen aantal
+            klantnaam = "Rae"
+            aantal = Number(prompt("Aantal boeken te bestellen?"))
             titel = "JavaScript"
             prijs = 29.90;
-            document.write("<br> Bedankt voor je bestelling: " + klantnaam + "<br> Boektitel is: " + titel + "<br> Aantal te bestellen: " + aantal + "<br> Prijs per boek is: " + prijs.toFixed(2))
+            bedrag = aantal * prijs 
+            btw = (Math.round(bedrag * 6) / 100) + " euro";
+            document.write("<br> Bedankt voor je bestelling: " 
+            + klantnaam + "<br> Boektitel is: " 
+            + titel + "<br> Aantal te bestellen: " 
+            + aantal + "<br> Prijs per boek is: " 
+            + prijs.toFixed(2) + + "<br> Bedrag: " + bedrag + "<br> Btw: " + btw)
         </script>
     </body>
 </html>
