@@ -1,5 +1,6 @@
 # School-JS
 dit is om te copieren zodat je het niet hoeft te typen.
+```html
 <!DOCTYPE html>
     <html lang="nl">
         <head>
@@ -11,3 +12,4 @@ dit is om te copieren zodat je het niet hoeft te typen.
             </script>
         </body>
 </html>
+```
