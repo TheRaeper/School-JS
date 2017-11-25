@@ -32,15 +32,23 @@ document.write("<br> Opgave 33: Resultaat van reverse: " + klas)
 index = studenten.indexOf('Jozef')
 document.write("<br> Opgave 34: Resultaat van indexOf: " + index)
 //Opgave 35
-
+delete klas[2]
+document.write("<br> Opgave 35: Resultaat van delete: " + klas)
 //Opgave 36
-
+document.write("<br> Opgave 36; Datatype van gedelete element is: " + typeof klas[2])
 //Opgave 37
-
+klas.splice(2,1)
+document.write("<br> Opgave 37: Element voledig verwijderd: " + klas)
 //Opgave 38
-
+index = studenten.indexOf('Jozef')
+studenten.splice(index,1)
+document.write("<br> Opgave 38: Specifieke student verwijderd: " + studenten)
 //Opgave 39
-
+klas = klas.slice()
+document.write("<br> Opgave 39: Resultaat van kopieren: " + klas)
 //Opgave 40
-
+myString = klas.join('|')
+document.write("<br> Opgave 40: Resultaat van join: " + myString)
 //Opgave 41
+myArray = myString.split('|')
+document.write("<br> Opgave 41: Resultaat van split: " + myArray)
