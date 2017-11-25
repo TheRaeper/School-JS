@@ -29,7 +29,8 @@ document.write("<br> Opgave 32: Resultaat van sort: " + studenten)
 studenten.reverse()
 document.write("<br> Opgave 33: Resultaat van reverse: " + klas)
 //Opgave 34
-//bladzij 146
+index = studenten.indexOf('Jozef')
+document.write("<br> Opgave 34: Resultaat van indexOf: " + index)
 //Opgave 35
 
 //Opgave 36
