@@ -10,3 +10,11 @@ laptops['asusbook'] =
 laptops['dellbook'] = 
 {'model' : 'fire' , 'vooraad' : 987, 'prijs' : 890,}
 document.write("<br> Opgave 43: laptops aray uitgebreid")
+//Opgave 44
+document.write("<br> Opgave 44: De laptops array heeft " + laptops.length + 'elementen')
+//Opgave 45
+mac = 'macbook' in laptops
+asus = 'asusbook' in laptops
+dell = 'dellbook' in laptops
+document.write('<br> Opgave 45: De variabele mac is: ' + mac)
+document.write('<br> Mac specificaties -------' + '<br> Model: ' + laptops['macbook']['model'] + '<br> Vooraad: ' + laptops['macbook']['vooraad'] + '<br> Prijs: ' + laptops['model']['prijs'])
