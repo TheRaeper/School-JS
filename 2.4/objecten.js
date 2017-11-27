@@ -16,5 +16,5 @@ document.write("<br> Opgave 44: De laptops array heeft " + laptops.length + 'ele
 mac = 'macbook' in laptops
 asus = 'asusbook' in laptops
 dell = 'dellbook' in laptops
-document.write('<br> Opgave 45: De variabele mac is: ' + mac)
-document.write('<br> Mac specificaties -------' + '<br> Model: ' + laptops['macbook']['model'] + '<br> Vooraad: ' + laptops['macbook']['vooraad'] + '<br> Prijs: ' + laptops['model']['prijs'])
+document.write("<br> Opgave 45: De variabele mac is: " + mac)
+document.write("<br> Mac specificaties -------" + "<br> Model: " + laptops['macbook']['model'] + "<br> Vooraad: " + laptops['macbook']['vooraad'] + "<br> Prijs: " + laptops['macbook']['prijs'])
