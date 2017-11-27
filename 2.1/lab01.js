@@ -7,9 +7,7 @@ bedrag = aantal * prijs
 btw = (bedrag * 6) / 100;
 totaal = (bedrag + btw);
 
-document.write("<br> Bedankt voor je bestelling: " + klantnaam)
-document.write("<br> Boektitel is: " + titel)
-document.write("<br> Aantal te bestellen: " + aantal)
+document.write("<br> Bedankt voor je bestelling: " + klantnaam + "<br> Boektitel is: " + titel + "<br> Aantal te bestellen: " + aantal)
 document.write("<br> Prijs per boek is: " + prijs.toFixed(2))
 document.write("<br> Bedrag: " + bedrag.toFixed(2))
 document.write("<br> Btw: " + btw.toFixed(2))

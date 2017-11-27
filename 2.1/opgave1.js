@@ -1,7 +1,10 @@
-alert("Welcome to my world!!!");
-alert("Opgave 2: Welkom bij mijn eerste JavaScript.");
-document.write("<p>Opgave 3: Dit is een paragraaf.</p>");
-confirm("Opgave 4: Wilt u doorgaan?");
-prompt("Opgave 5: Typ uw wachtwoord in", "");
-prompt("Opgave 6: Typ uw gebruikersnaam in", "");
-confirm("Opgave 6: Wilt u abonnee worden?");
+alert("Welcome to my shithole")
+alert("dit is een alertbox")
+alert("Opgave 2: Welkom bij mijn eerste JavaScript.")
+doorgaan = confirm("Opgave 4: Wilt u doorgaan?")
+gebruikersnaam = prompt("Opgave 6: Typ uw gebruikersnaam in","")
+wachtwoord = prompt("Opgave 5: Typ uw wachtwoord in", "")
+abonnee = confirm("Opgave 6: Wilt u abonnee worden?")
+document.write("<h3><br>Interactive HTML</h3>"+"<br>Opgave 3: Dit is een paragraaf.")
+document.write("<br> gbrsnaam = "+gebruikersnaam)
+document.write("<br> ww = "+wachtwoord)

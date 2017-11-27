@@ -10,7 +10,7 @@ volledigenaam = voornaam + "<br>" + achternaam;
 document.write(
     "<p> Opgave 8 </p>" + volledigenaam + "<br> Totaal te betalen: " + totaal
 )
-console.log("hey your mum is a how")
+console.log("man's not hot")
 //opgave 9 vanaf hier
 Voornaam = "Zakaria"
 Achternaam = "Bolt"
