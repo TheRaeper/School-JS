@@ -8,7 +8,7 @@ dit is om te copieren zodat je het niet hoeft te typen.
             <title></title>
         </head>
         <body>
-            <script scr=""></script>
+            <script src=""></script>
         </body>
 </html>
 ```
