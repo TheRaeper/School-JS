@@ -1,5 +1,4 @@
-maanden=new Array('januari','februari','maart','april','mei','juni','juli','augustus','september','oktober','november','december')
-weekdag=new Array('zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag')
-vandaag=new Date()
-jaar=vandaag.getFullYear()
-document.write("<br>Vandaag is: "+vandaag+jaar);
+let maanden =  ['januari','februari','maart','april','mei','juni','juli','augustus','september','oktober','november','december']
+let weekdag = ['zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag']
+let vandaag = new Date()
+document.write(`<br>Vandaag is Dag: <b>${ weekdag[vandaag.getDay()] }</b>, maand: <b>${ maanden[vandaag.getMonth()] }</b>, Jaar: <b>${ vandaag.getFullYear() }</b>`);
