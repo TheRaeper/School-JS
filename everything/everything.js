@@ -44,7 +44,7 @@
         float = 3.3445; //meerdere var met float?
         resultaat2 = float.toString()
         resultaat3 = float.toFixed(2)
-    var twee //variabele twee ongedefineerd
+        twee //variabele twee ongedefineerd
         een = 1;
         drie = // een + twee kan niet twee bestaat al en deze som wordt niet weergegeven omdat het niet kan
         document.write("<br> Opgave 10: Datatype van naam is: " + typeof (naam))
