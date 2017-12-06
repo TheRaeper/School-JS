@@ -5,7 +5,7 @@ Alle school opdrachten voor Javascript
 In een terminal type dit:
 - yarn install
 - yarn start
-- open een browser en ga naar: localhost:300/\*\*jou map\*\*
+- open een browser en ga naar: [localhost:300](http://localhost:300)
 
 ### een startpunt voor elke map.
 index.html
