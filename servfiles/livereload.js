@@ -1,15 +1,9 @@
 let mainfunction = () => {
   setTimeout(() => {
     fetch('/checknewdata')
-    .then(function(res) {
+    .then((res) => {
       return res.json()
-    }).then(function(jsondata) {
-      if (jsondata.newdata) {
-        location.reload()
-      } else {
-        mainfunction()
-      }
-    })
+    }).then((jsondata) => (jsondata.newdata) ? location.reload() : mainfunction())
   }, 500)
 }
 
