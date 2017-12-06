@@ -6,5 +6,6 @@ html
   body
     div.center
       each val in files
-        p
-          a(href=val)= val
+        if val != 'serv.js' && val != 'yarn-error.log' && val != 'yarn.lock' && val != 'package-lock.json' && val != 'package.json' && val != '.gitignore' && val != 'cheatsheetJS.xlsx' && val != 'node_modules'
+          p
+            a(href=val)= val
