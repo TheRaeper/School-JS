@@ -1,6 +1,12 @@
 # School-JS
 Alle school opdrachten voor Javascript
 
+### Live reload.
+In een terminal type dit:
+- yarn install
+- yarn start
+- open een browser en ga naar: localhost:300/\*\*jou map\*\*
+
 ### een startpunt voor elke map.
 index.html
 ```html

@@ -1,0 +1,9 @@
+html
+  head
+    title: Directories
+    link(rel="stylesheet" href="/servfiles/dirstyle.css")
+  body
+    div.center
+      each val in files
+        p
+          a(href=val)= val
