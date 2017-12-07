@@ -1,1 +1,6 @@
-klantnaam = prompt(`Wat is uw naam?`)
+let klantnaam = prompt(`Wat is uw naam?`)
+let aantaal = Number(promt(`Hoeveel boeken wilt u bestellen?`))
+let vandaag = new Date()
+document.write(`<br>Lab06`)
+document.write(`<br>Factuur`)
+document.write(`<br>Factuurdatum: <b>${ vandaag.getDay()] }</b>, - <b>${ vandaag.getMonth()] }</b>, - <b>${ vandaag.getYear()] }</b>`)
