@@ -3,7 +3,7 @@
         betaling = prompt("Wat is uw gewenste manier van betalen?")
         titel = "JavaScript"
         prijs = 29.90;
-        bedrag = aantal * prijs 
+        bedrag = aantal * prijs
         btw = (bedrag * 6) / 100;
         totaal = (bedrag + btw);
     document.write("<br> Bedankt voor je bestelling: " + klantnaam + "<br> Boektitel is: " + titel + "<br> Aantal te bestellen: " + aantal)
@@ -135,7 +135,7 @@
 })
 console.log(team)
 //Opgave 21
-    document.write("<br> Opgave 21: Array aangemaakt") 
+    document.write("<br> Opgave 21: Array aangemaakt")
 //Opgave 22
     document.write("<br> Opgave 22: Elementen aangemaakt")
 //Opgave 23
@@ -151,9 +151,9 @@ console.log(team)
 }
     document.write("<br> Opgave 42: laptops array aangemaakt: " + laptops)
 //Opgave 43
-    laptops['asusbook'] = 
+    laptops['asusbook'] =
         {'model' : 'wind' , 'vooraad' : 1000, 'prijs' : 990,}
-    laptops['dellbook'] = 
+    laptops['dellbook'] =
         {'model' : 'fire' , 'vooraad' : 987, 'prijs' : 890,}
     document.write("<br> Opgave 43: laptops aray uitgebreid")
 //Opgave 44
@@ -197,3 +197,29 @@ console.log(team)
         let weekdag = ['zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag']
         let vandaag = new Date()
     document.write(`<br>Vandaag is Dag: <b>${ weekdag[vandaag.getDay()] }</b>, maand: <b>${ maanden[vandaag.getMonth()] }</b>, Jaar: <b>${ vandaag.getFullYear() }</b>`);
+//Lab06
+    let klantnaam = prompt(`Wat is uw naam?`)
+    let aantal = Number(prompt(`Hoeveel boeken wilt u bestellen?`))
+    let vandaag = new Date()
+    let boek = (`JavaSctipt`)
+    let prijsboek = 29.90
+    let zonderbtw = aantal*prijsboek
+    let btw = (zonderbtw*6)/100
+    let metbtw = zonderbtw+btw
+    Date.prototype.addDays = function(days) {
+      dat = new Date(this.valueOf())
+      dat.setDate(dat.getDate() + days)
+      return dat;
+    }
+    dat = new Date()
+    document.write(`<br>Lab06`)
+    document.write(`<br>Factuur`)
+    document.write(`<br>Factuurdatum: ${vandaag}`)
+    document.write(`<br>Betaaldatum: ${dat.addDays(5)}`)
+    document.write(`<br>Bedankt voor je bestelling: ${klantnaam}`)
+    document.write(`<br>Boektitel: ${boek}`)
+    document.write(`<br>Aantal te bestellen: ${aantal}`)
+    document.write(`<br>Prijs per boek is: €${prijsboek.toFixed(2)}`)
+    document.write(`<br>Bedrag zonder BTW: €${zonderbtw.toFixed(2)}`)
+    document.write(`<br>De BTW bedraagt: €${metbtw.toFixed(2)}`)
+    document.write(`<br>Totaalprijs inclusief btw: €${metbtw.toFixed(2)}`)
