@@ -12,12 +12,12 @@ Date.prototype.addDays = function(days) {
   return dat;
 }
 dat = new Date()
-document.write(`<br>Lab06`)
-document.write(`<br>Factuur`)
-document.write(`<br>Factuurdatum: ${vandaag}`)
-document.write(`<br>Betaaldatum: ${dat.addDays(5)}`)
-document.write(`<br> Bedankt voor je bestelling: ${klantnaam}<br> Boektitel is: ${titel}<br> Aantal te bestellen: ${aantal}`)
-document.write(`<br> Prijs per boek is: ${prijs.toFixed(2)}`)
-document.write(`<br> Bedrag: ${bedrag.toFixed(2)}`)
-document.write(`<br> Btw: ${btw.toFixed(2)}`)
-document.write(`<br> Totaal inclusief BTW is: ${totaal.toFixed(2)}`)
+document.write(`<br>Lab06
+<br>Factuur
+<br>Factuurdatum: ${vandaag}
+<br>Betaaldatum: ${dat.addDays(5)}
+<br> Bedankt voor je bestelling: ${klantnaam}<br> Boektitel is: ${titel}<br> Aantal te bestellen: ${aantal}
+<br> Prijs per boek is: ${prijs.toFixed(2)}
+<br> Bedrag: ${bedrag.toFixed(2)}
+<br> Btw: ${btw.toFixed(2)}
+<br> Totaal inclusief BTW is: ${totaal.toFixed(2)}`)
