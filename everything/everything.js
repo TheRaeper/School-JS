@@ -47,7 +47,7 @@
         twee //variabele twee ongedefineerd
         een = 1;
         drie = // een + twee kan niet twee bestaat al en deze som wordt niet weergegeven omdat het niet kan
-        document.write("<br> Opgave 10: Datatype van naam is: " + typeof (naam))
+    document.write("<br> Opgave 10: Datatype van naam is: " + typeof (naam))
     document.write("<br> Opgave 11: Datatype van leerplichtig is: " + typeof (leerplichtig))
     document.write("<br> Opgave 12: Datatype van temperatuur is: " + typeof (temparatuur))
     document.write("<br> Opgave 13: Waarde van btw is: " + btw)
@@ -112,15 +112,15 @@
         myArray = myString.split('|')
     document.write("<br> Opgave 41: Resultaat van split: " + myArray)
 //Opgave 21
-    var weekdag = []
-        weekdag.push('maandag')
-        weekdag.push('dinsdag')
-        weekdag.push('woensdag')
-        weekdag.push('donderdag')
-        weekdag.push('vrijdag')
+      var weekdag = []
+          weekdag.push('maandag')
+          weekdag.push('dinsdag')
+          weekdag.push('woensdag')
+          weekdag.push('donderdag')
+          weekdag.push('vrijdag')
     console.log(weekdag)
 //Opgave 23
-    var team = []
+      var team = []
         team.push({
             teamnaam: 'team1',
             wedstrijden: [1,2,3]
@@ -133,7 +133,7 @@
             teamnaam: 'team3',
             wedstrijden: [7,8,9]
 })
-console.log(team)
+    console.log(team)
 //Opgave 21
     document.write("<br> Opgave 21: Array aangemaakt")
 //Opgave 22
@@ -146,15 +146,15 @@ console.log(team)
 }
 //Opgave 42
     laptops = []
-    laptops ['macbook'] = {
+        laptops ['macbook'] = {
         'model' : 'air' , 'vooraad' : 2000, 'prijs' : 1090,
 }
     document.write("<br> Opgave 42: laptops array aangemaakt: " + laptops)
 //Opgave 43
-    laptops['asusbook'] =
-        {'model' : 'wind' , 'vooraad' : 1000, 'prijs' : 990,}
-    laptops['dellbook'] =
-        {'model' : 'fire' , 'vooraad' : 987, 'prijs' : 890,}
+        laptops['asusbook'] =
+          {'model' : 'wind' , 'vooraad' : 1000, 'prijs' : 990,}
+        laptops['dellbook'] =
+          {'model' : 'fire' , 'vooraad' : 987, 'prijs' : 890,}
     document.write("<br> Opgave 43: laptops aray uitgebreid")
 //Opgave 44
     document.write("<br> Opgave 44: De laptops array heeft " + laptops.length + 'elementen')
@@ -174,7 +174,7 @@ console.log(team)
     document.write(`<br> Opgave 47: De datum van morgen is: ${morgen.getDate()}`)
 //Opgave 48
 //datum met string
-    let schooljaar = new Date('2015-09-04')
+        let schooljaar = new Date('2015-09-04')
 //datum met datum en tijd string
         let wintertijd = new Date('2015-10-28T03:00:00')
     document.write(`<br> Opgave 48: Begin wintertijd is: ${wintertijd}`)
@@ -198,20 +198,20 @@ console.log(team)
         let vandaag = new Date()
     document.write(`<br>Vandaag is Dag: <b>${ weekdag[vandaag.getDay()] }</b>, maand: <b>${ maanden[vandaag.getMonth()] }</b>, Jaar: <b>${ vandaag.getFullYear() }</b>`);
 //Lab06
-    let klantnaam = prompt(`Wat is uw naam?`)
-    let aantal = Number(prompt(`Hoeveel boeken wilt u bestellen?`))
-    let vandaag = new Date()
-    let boek = (`JavaSctipt`)
-    let prijsboek = 29.90
-    let zonderbtw = aantal*prijsboek
-    let btw = (zonderbtw*6)/100
-    let metbtw = zonderbtw+btw
+      let klantnaam = prompt(`Wat is uw naam?`)
+      let aantal = Number(prompt(`Hoeveel boeken wilt u bestellen?`))
+      let vandaag = new Date()
+      let boek = (`JavaSctipt`)
+      let prijsboek = 29.90
+      let zonderbtw = aantal*prijsboek
+      let btw = (zonderbtw*6)/100
+      let metbtw = zonderbtw+btw
     Date.prototype.addDays = function(days) {
       dat = new Date(this.valueOf())
       dat.setDate(dat.getDate() + days)
       return dat;
     }
-    dat = new Date()
+      let dat = new Date()
     document.write(`<br>Lab06`)
     document.write(`<br>Factuur`)
     document.write(`<br>Factuurdatum: ${vandaag}`)
