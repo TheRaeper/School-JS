@@ -2,7 +2,7 @@
 let wl = (d) => {document.write(d);document.write('<br>')}
 
 let doorgaan = confirm(`Opgave 52: Doorgaan?`)
-//opgave 52
+//opgave 55
 if (doorgaan == true) {
   wl(`Welkom bij de if-else-if-opdracht`)
 }
