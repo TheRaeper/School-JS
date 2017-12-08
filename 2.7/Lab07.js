@@ -1,3 +1,3 @@
 let wl = (d) => {document.write(d);document.write('<br>')}
 //Lab07
-penisprikkel
+penisprikkel = `${`${`${`${`${`${`${`${`${`${`${`${`${`${`${`${`${`${`${`${`${`${`${'why not'}`}`}`}`}`}`}`}`}`}`}`}`}`}`}`}`}`}`}`}`}`}`}`
