@@ -23,6 +23,7 @@ if (woonplaats1 && postcode1){
 else {
   bezorgkosten = 15
 }
+let totaalbedrag = bezorgkosten + totaal
 Date.prototype.addDays = function(days) {
   dat = new Date(this.valueOf())
   dat.setDate(dat.getDate() + days)
@@ -42,3 +43,4 @@ document.write(`<br>Lab06
 <br>Btw: ${btw.toFixed(2)}
 <br>Totaal inclusief BTW is: ${totaal.toFixed(2)}`)
 document.write(`<br>Bezorgkosten: ${bezorgkosten}`)
+document.write(`<br>Totaal bedrag met bezorgkosten: ${totaalbedrag.toFixed(2)}`)
