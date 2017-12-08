@@ -15,7 +15,7 @@ let totaal = bedrag+btw
 let bezorgkosten = 15
 
 var woonplaats1 = (woonplaats === `amsterdam` ? true : false)
-var postcode1 = (postcode >= `1000AA` <= `2000BB` ? true : false)
+var postcode1 = (postcode >= `1000AA` && postcode <= `2000BB` ? true : false)
 if (woonplaats1 && postcode1){
   bezorgkosten = 0
   alert(`U betaalt geen bezorgkosten.`)
@@ -41,6 +41,6 @@ document.write(`<br>Lab06
 <br>Prijs per boek is: ${prijs.toFixed(2)}
 <br>Bedrag: ${bedrag.toFixed(2)}
 <br>Btw: ${btw.toFixed(2)}
-<br>Totaal inclusief BTW is: ${totaal.toFixed(2)}`)
-document.write(`<br>Bezorgkosten: ${bezorgkosten}`)
-document.write(`<br>Totaal bedrag met bezorgkosten: ${totaalbedrag.toFixed(2)}`)
+<br>Totaal inclusief BTW is: ${totaal.toFixed(2)}
+<br>Bezorgkosten: ${bezorgkosten}
+<br>Totaal bedrag met bezorgkosten: ${totaalbedrag.toFixed(2)}`)
