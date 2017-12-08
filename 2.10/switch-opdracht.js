@@ -3,7 +3,7 @@ datum = new Date()
 vandaag = datum.getDay()
 uur = datum.getHours()
 
-document.write('Het is vandaag: ' + datum)
+document.write(`Het is vandaag: ${datum}`)
 switch(vandaag) {
     case 1:
         document.write('maandag is mijn eerste stagedag')
