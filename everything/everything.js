@@ -221,3 +221,89 @@
     document.write(`<br> Bedrag: ${bedrag.toFixed(2)}`)
     document.write(`<br> Btw: ${btw.toFixed(2)}`)
     document.write(`<br> Totaal inclusief BTW is: ${totaal.toFixed(2)}`)
+
+    let wl = (d) => {document.write(d);document.write('<br>')}
+
+    let doorgaan = confirm(`Opgave 52: Doorgaan?`)
+//opgave 52
+    if (doorgaan) {
+      wl(`Welkom bij de if-opdracht`)
+    }
+//Opgave 53
+    else {
+      wl(`tot ziens`)
+    }
+//Opgave 54
+    if (doorgaan) {
+      leeftijd = parseInt(prompt(`Wat is je leeftijd?`))
+      if (leeftijd < 17) {
+        leerplichtig = true
+      }
+    }
+    else {
+      leerplichtig = false
+    }
+    gediplomeerd = confirm(`Heb je je diploma behaald?`)
+    if (leerplichtig && !gediplomeerd) {
+      alert(`Doorstuderen!`)
+    }
+    if (gediplomeerd || !leerplichtig) {
+      alert(`Je bent gediplomeerd Of niet leerplichtig Of allebei`)
+    }
+
+    let wl = (d) => {document.write(d);document.write('<br>')}
+    let doorgaan = confirm(`Opgave 55: Doorgaan?`)
+//opgave 55
+    if (doorgaan) {
+      wl(`Welkom bij de if-else-if-opdracht`)
+    } else {
+      wl(`Tot ziens`)
+    }
+
+    if (doorgaan) {
+      creditcard = confirm(`Heb je een creditcard?`)
+      if (creditcard) {
+        creditcard = true
+      }
+      else {
+        creditcard = false
+      }
+    }
+
+    if (doorgaan) {
+      leeftijd = parseInt(prompt(`Wat is je leeftijd?`))
+      if (leeftijd > 18) {
+        leeftijd = true
+      }
+      else {
+        leeftijd = false
+      }
+    }
+
+    if (creditcard && leeftijd){
+      alert(`Je mag tot en met €1000 lenen.`)
+    } else if (creditcard || leeftijd) {
+      alert(`Je mag tot en met €500 lenen.`)
+    } else {
+      alert(`JE MAG GEEN GELD LENEN JONGE KUT VEREKTE MONGOL!`)
+    }
+
+    let wl = (d) => {document.write(d);document.write('<br>')}
+//Opgave 56
+    let doorgaan = confirm(`Opgave 56: Doorgaan?`)
+
+    if (doorgaan == true) {
+      postcode = prompt(`Wat is je postcode`)
+      if (postcode == `1010ST`) {
+        postcode = !""
+      }
+      else {
+        postcode = !!""
+      }
+    }
+    if (postcode){
+      alert(`Kans op de Postcode Loterij is 90%`)
+    }
+    if (!postcode)[
+      alert(`Kans op de Postcode Loterij is 0.069%.`)
+    }
