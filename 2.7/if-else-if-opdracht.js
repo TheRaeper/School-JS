@@ -2,14 +2,13 @@ let wl = (d) => {document.write(d);document.write('<br>')}
 
 let doorgaan = confirm(`Opgave 55: Doorgaan?`)
 //opgave 55
-if (doorgaan == true) {
+if (doorgaan) {
   wl(`Welkom bij de if-else-if-opdracht`)
-}
-else {
+} else {
   wl(`Tot ziens`)
 }
 
-if (doorgaan == true) {
+if (doorgaan) {
   creditcard = confirm(`Heb je een creditcard?`)
   if (creditcard) {
     creditcard = true
@@ -18,7 +17,8 @@ if (doorgaan == true) {
     creditcard = false
   }
 }
-if (doorgaan == true) {
+
+if (doorgaan) {
   leeftijd = parseInt(prompt(`Wat is je leeftijd?`))
   if (leeftijd > 18) {
     leeftijd = true
@@ -27,12 +27,11 @@ if (doorgaan == true) {
     leeftijd = false
   }
 }
+
 if (creditcard && leeftijd){
   alert(`Je mag tot en met €1000 lenen.`)
-}
-else if (creditcard || leeftijd) {
+} else if (creditcard || leeftijd) {
   alert(`Je mag tot en met €500 lenen.`)
-}
-else {
+} else {
   alert(`JE MAG GEEN GELD LENEN JONGE KUT VEREKTE MONGOL!`)
 }
