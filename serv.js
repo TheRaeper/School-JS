@@ -97,7 +97,7 @@ let cli = (firsttime) => {
             result = result.replace(/ /g,'-')
             var html = pug.renderFile('./servfiles/basic.pug', {
               op: result,
-              opjs: `${dir}${result}.js`
+              opjs: `${result}.js`
             })
             fs.outputFileSync(`${dir}${result}.html`, htmlBeautify(html))
             fs.copySync('./servfiles/basic.js', `${dir}${result}.js`)
