@@ -16,4 +16,4 @@ if (postcode){
 }
 if (!postcode)[
   alert(`Kans op de Postcode Loterij is 0.069%.`)
-]
+}
