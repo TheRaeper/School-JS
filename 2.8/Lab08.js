@@ -1,24 +1,2 @@
 //Lab08
-let wl = (d) => {document.write(d);document.write('<br>')}
-
-Date.prototype.addDays = function(days) {
-  dat = new Date(this.valueOf())
-  dat.setDate(dat.getDate() + days)
-  return dat;
-}
-let dat = new Date()
-
-wl(`Vandaag is: ${dat.toDateString()}`)
-let factuurdatum = dat.addDays(-16)
-wl(`Factuurdatum is: ${factuurdatum.toDateString()}`)
-let betaaldatum = factuurdatum.addDays(30)
-wl(`Betaaldatum is: ${betaaldatum.toDateString()}`)
-
-let vandaag = new Date()
-let dagenover = betaaldatum - vandaag
-if (vandaag.getDate() == betaaldatum.getDate()) {
-  alert(`Meld incassobureau!`)
-}
-else {
-  wl(`u heeft nog ${dagenover} dagen om te betalen.`)
-}
+let wl=a=>{document.write(a),document.write("<br>")};Date.prototype.addDays=function(a){return dat=new Date(this.valueOf()),dat.setDate(dat.getDate()+a),dat};let today=new Date,factuurdatum=today.addDays(-16),betaaldatum=factuurdatum.addDays(30);wl(`Vandaag is: ${today.toDateString()}`),wl(`Factuurdatum is: ${factuurdatum.toDateString()}`),wl(`Betaaldatum is: ${betaaldatum.toDateString()}`);let vandaag=new Date,dagenover=(betaaldatum-vandaag)/864e5;vandaag.getDate()==betaaldatum.getDate()?alert("Meld incassobureau!"):wl(`u heeft nog ${dagenover} dagen om te betalen.`);
