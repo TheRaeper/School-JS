@@ -15,9 +15,10 @@ let betaaldatum = factuurdatum.addDays(30)
 wl(`Betaaldatum is: ${betaaldatum}`)
 
 let vandaag = Date.now()
-if (vandaag == betaaldatum) {
+
+if (vandaag.getDate() == betaaldatum.getDate()) {
   alert(`Meld incassobureau!`)
 }
 else {
-  vandaag - betaaldatum
+  wl(`u heeft nog ${vandaag - betaaldatum} dagen om te betalen.`)
 }
