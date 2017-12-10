@@ -8,17 +8,17 @@ Date.prototype.addDays = function(days) {
 }
 let dat = new Date()
 
-wl(`Vandaag is: ${dat}`)
+wl(`Vandaag is: ${dat.toDateString()}`)
 let factuurdatum = dat.addDays(-16)
-wl(`Factuurdatum is: ${factuurdatum}`)
+wl(`Factuurdatum is: ${factuurdatum.toDateString()}`)
 let betaaldatum = factuurdatum.addDays(30)
-wl(`Betaaldatum is: ${betaaldatum}`)
+wl(`Betaaldatum is: ${betaaldatum.toDateString()}`)
 
-let vandaag = Date.now()
-
+let vandaag = new Date()
+let dagenover = betaaldatum - vandaag
 if (vandaag.getDate() == betaaldatum.getDate()) {
   alert(`Meld incassobureau!`)
 }
 else {
-  wl(`u heeft nog ${vandaag - betaaldatum} dagen om te betalen.`)
+  wl(`u heeft nog ${dagenover} dagen om te betalen.`)
 }

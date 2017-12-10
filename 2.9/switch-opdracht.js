@@ -22,10 +22,15 @@ switch (vandaag){
   case 5:
     wl(`vrijdag is mijn eerste stagedag.`)
     break
-  case 6:
-    wl(`zaterdag ben ik vrij.`)
+}
+// hieronder hoe het moet volgens het boek wtf heb ik fout?
+switch (n) {
+  case 1:
+    //acties uit te voeren als n==1
     break
-  case 7:
-    wl(`zondag ben ik vrij.`)
+  case 2:
+    //acties uit te voeren als n==2
     break
+  default:
+    //acties uit te voeren als n anders is dan 1 en 2
 }
