@@ -4,7 +4,7 @@ let datum = new Date()
 let vandaag = datum.getDay()
 let uur = datum.getHours()
 
-wl(`Het is vandaag: ${datum}`)
+wl(`Het is vandaag: ${datum.toDateString()}`)
 
 switch (vandaag){
   case 1:
