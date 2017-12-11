@@ -1,2 +1,24 @@
-//Lab08
-let wl=a=>{document.write(a),document.write("<br>")};Date.prototype.addDays=function(a){return dat=new Date(this.valueOf()),dat.setDate(dat.getDate()+a),dat};let today=new Date,factuurdatum=today.addDays(-16),betaaldatum=factuurdatum.addDays(30);wl(`Vandaag is: ${today.toDateString()}`),wl(`Factuurdatum is: ${factuurdatum.toDateString()}`),wl(`Betaaldatum is: ${betaaldatum.toDateString()}`);let vandaag=new Date,dagenover=(betaaldatum-vandaag)/864e5;vandaag.getDate()==betaaldatum.getDate()?alert("Meld incassobureau!"):wl(`u heeft nog ${dagenover} dagen om te betalen.`);
+// lab 08
+let a = [(d) => {document.write(d);document.write('<br>')},new Date()]
+Date.prototype.addDays = function(days) {
+  dat = new Date(this.valueOf())
+  dat.setDate(dat.getDate() + days)
+  return dat;
+}
+a.push(a[1].addDays(-16))
+a.push(a[2].addDays(30))
+a.push(new Date())
+a.push(a[4].getDate())
+a.push(a[3].getDate())
+a.push((a[3] - a[4]) / (1000 * 60 * 60 * 24))
+a.push(' i')
+a.push('s')
+a.push(a[9] + a[10])
+a[0](`Vandaag${a[10]}: ${a[1].toDateString()}`)
+a[0](`Factuurdatum${a[10]}: ${a[2].toDateString()}`)
+a[0](`Betaaldatum${a[10]}: ${a[3].toDateString()}`)
+if (a[5] == a[6]) {
+  alert(`Meld incassobureau!`)
+} else {
+  a[0](`u heeft nog ${Math.round(a[7])} dagen om te betalen.`)
+}
