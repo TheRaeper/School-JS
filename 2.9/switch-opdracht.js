@@ -28,15 +28,4 @@ switch (vandaag){
   case 0:
     document.write(`zondag is mijn vrije dag`)
     break
-}
-// hieronder hoe het moet volgens het boek wtf heb ik fout?
-switch (n) {
-  case 1:
-    //acties uit te voeren als n==1
-    break
-  case 2:
-    //acties uit te voeren als n==2
-    break
-  default:
-    //acties uit te voeren als n anders is dan 1 en 2
-}
+  }
