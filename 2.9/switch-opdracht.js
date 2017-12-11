@@ -25,7 +25,7 @@ switch (vandaag){
   case 5:
     document.write(`zaterdag is mijn vrije dag.`)
     break
-  case 6:
+  case 0:
     document.write(`zondag is mijn vrije dag`)
     break
 }
