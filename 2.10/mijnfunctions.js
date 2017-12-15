@@ -4,6 +4,7 @@ function verdubbel(inputgetal) {
   outputgetal = inputgetal * 2
   return (outputgetal);
 }
+
 //opgave 60
 function afmelden() {
   let antwoord = confirm(`Wilt u zich afmelden?`)
@@ -11,9 +12,20 @@ function afmelden() {
     alert(`U wordt afgemeld!!!`)
   }
 }
+
 //opgave 61
-mijngetal = prompt(`Typ getal in`)
-resultaat = verdubbel(mijngetal)
+let mijngetal = prompt(`Typ getal in`)
+let resultaat = verdubbel(mijngetal)
 wl(`Input-getal: ${mijngetal}`)
 wl(`Output-getal: ${resultaat}`)
 afmelden()
+
+//opgave 62
+let begroeten = Date.now()
+let uur = getHours()
+if (uur >= getHours(0) <= getHours(11)){
+  wl(`Goedemorgen`)
+}
+if (uur >= getHours(12) <= getHours(17)){
+  wl(`Goedemiddag`)
+}
