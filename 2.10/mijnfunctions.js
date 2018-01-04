@@ -11,6 +11,9 @@ function afmelden() {
   if (antwoord == true) {
     alert(`U wordt afgemeld!!!`)
   }
+  if (antwoord == false){
+    alert('U bent niet afgemeld.')
+  }
 }
 
 //opgave 61
@@ -28,4 +31,7 @@ if (uur >= getHours(0) <= getHours(11)){
 }
 if (uur >= getHours(12) <= getHours(17)){
   wl(`Goedemiddag`)
+}
+else {
+  wl('Goedenavond')
 }
