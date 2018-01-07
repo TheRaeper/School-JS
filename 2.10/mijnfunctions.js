@@ -29,3 +29,19 @@ if (uur >= getHours(0) <= getHours(11)){
 } else {
   wl('Goedenavond')
 }
+
+
+// a small tip
+
+// the es5 funtion:
+function function1(input) {
+  return `some value: ${input}`
+}
+
+// the es6 arrow funciton:
+function2 = (input) => {
+  return `some value: ${input}`
+}
+
+// the es6 way also allows you to do this:
+function3 = (input) => `some value: ${input}`
