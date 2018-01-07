@@ -1,20 +1,14 @@
 wl = (d) => {document.write(d);document.write(`<br>`)}
+
 //opgave 59
-function verdubbel(inputgetal) {
+verdubbel = (inputgetal) =>
   outputgetal = inputgetal * 2
-  return (outputgetal);
-}
 
 //opgave 60
-function afmelden() {
-  let antwoord = confirm(`Wilt u zich afmelden?`)
-  if (antwoord == true) {
-    alert(`U wordt afgemeld!!!`)
-  }
-  if (antwoord == false){
+afmelden = () =>
+  confirm(`Wilt u zich afmelden?`) ?
+    alert(`U wordt afgemeld!!!`) :
     alert('U bent niet afgemeld.')
-  }
-}
 
 //opgave 61
 let mijngetal = prompt(`Typ getal in`)
@@ -28,10 +22,8 @@ let begroeten = Date.now()
 let uur = getHours()
 if (uur >= getHours(0) <= getHours(11)){
   wl(`Goedemorgen`)
-}
-if (uur >= getHours(12) <= getHours(17)){
+} else if (uur >= getHours(12) <= getHours(17)){
   wl(`Goedemiddag`)
-}
-else {
+} else {
   wl('Goedenavond')
 }
