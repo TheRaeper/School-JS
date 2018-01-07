@@ -2,7 +2,7 @@ wl = (d) => {document.write(d);document.write(`<br>`)}
 
 //opgave 59
 verdubbel = (inputgetal) =>
-  outputgetal = inputgetal * 2
+  inputgetal * 2
 
 //opgave 60
 afmelden = () =>
