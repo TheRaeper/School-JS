@@ -1,10 +1,18 @@
 # School-JS
 Alle school opdrachten voor Javascript
 
+### Install
+- Installeer: [node.js](https://nodejs.org/en/)
+- Open een terminal in de repo
+- type: `npm i`
+
 ### Live reload.
-In een terminal type dit:
-- yarn install
-- yarn start
+Een live server script die automaties de webpagina herlaat als er veranderingen zijn in de code
+- `yarn start` OF `npm start`
+
+## ESlint
+Om te checken of de javascript goed is geschreven
+- `yarn lint` OF `npm run lint`
 
 ### een startpunt voor elke map.
 index.html
