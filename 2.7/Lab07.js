@@ -1,4 +1,4 @@
-let wl = (d) => {document.write(d);document.write('<br>')}
+const wl = (d) => {document.write(d);document.write('<br>')}
 //Lab07
 let klantnaam = prompt(`Wat is uw naam?`)
 let aantal = Number(prompt(`Hoeveel boeken wilt u bestellen?`))
@@ -25,13 +25,13 @@ else {
 }
 let totaalbedrag = bezorgkosten + totaal
 Date.prototype.addDays = function(days) {
-  dat = new Date(this.valueOf())
+  let dat = new Date(this.valueOf())
   dat.setDate(dat.getDate() + days)
-  return dat;
+  return dat
 }
-dat = new Date()
+let dat = new Date()
 
-document.write(`<br>Lab06
+wl(`<br>Lab06
 <br>Factuur
 <br>Factuurdatum: ${vandaag}
 <br>Betaaldatum: ${dat.addDays(5)}

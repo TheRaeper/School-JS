@@ -6,10 +6,10 @@ let inlogcode = prompt(`Wat is je inlogcode?`)
 switch (rol && inlogcode) {
   case `admin`:
     wl(`Welkom admin`)
-    break;
+    break
   case `student`:
     wl(`Welkom student`)
-    break;
+    break
   default:
     wl(`code ongeldig`)
 }

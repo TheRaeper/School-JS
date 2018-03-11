@@ -6,12 +6,12 @@ let prijs = 29.90
 let bedrag = aantal * prijs
 let btw = (bedrag * 6) / 100
 let totaal = bedrag+btw
-Date.prototype.addDays = function(days) {
-  dat = new Date(this.valueOf())
+Date.prototype.addDays = (days) => {
+  let dat = new Date(this.valueOf())
   dat.setDate(dat.getDate() + days)
-  return dat;
+  return dat
 }
-dat = new Date()
+let dat = new Date()
 document.write(`<br>Lab06
 <br>Factuur
 <br>Factuurdatum: ${vandaag}

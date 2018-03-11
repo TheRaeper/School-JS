@@ -1,13 +1,13 @@
-wl = (d) => {document.write(d);document.write(`<br>`)}
+const wl = (d) => {document.write(d);document.write(`<br>`)}
 
 //opgave 59
-verdubbel = (inputgetal) =>
+const verdubbel = (inputgetal) =>
   (typeof inputgetal == 'number') ? // check if "inputgetal" is a number,
     inputgetal * 2 : // if so return that times 2
     0  // if "inputgetal" is not a number return 0 (I think it's better to return a 0 because if you want to use the value later you are shure its a number)
 
 //opgave 60
-afmelden = () =>
+const afmelden = () =>
   confirm(`Wilt u zich afmelden?`) ? // if the ouput of the funciton: confirm is true
     alert(`U wordt afgemeld!!!`) : // alert the user: `U wordt afgemeld!!!`
     alert('U bent niet afgemeld.') // if the output of the first funciton is false alert: 'U bent niet afgemeld.
@@ -20,11 +20,12 @@ wl(`Output-getal: ${resultaat}`)
 afmelden()
 
 //opgave 62
-let begroeten = Date.now()
-let uur = getHours() // what is getHours ???
-if (uur >= getHours(0) <= getHours(11)){
+const begroeten = Date.now()
+let uur = begroeten.getHours() // what is getHours ???
+
+if (uur >= begroeten.getHours(0) <= begroeten.getHours(11)) {
   wl(`Goedemorgen`)
-} if else (uur >= getHours(12) <= getHours(17)){ // there is something called a if else you know :D
+} else if (uur >= begroeten.getHours(12) && uur <= begroeten.getHours(17)) { // there is something called a if else you know :D
   wl(`Goedemiddag`)
 } else {
   wl('Goedenavond')
@@ -34,14 +35,17 @@ if (uur >= getHours(0) <= getHours(11)){
 // a small tip
 
 // the es5 funtion:
-function function1(input) {
-  return `some value: ${input}`
-}
+// function1 (input) {
+//   return `some value: ${input}`
+// }
 
 // the es6 arrow funciton:
-function2 = (input) => {
-  return `some value: ${input}`
-}
+// const function2 = (input) => {
+//   return `some value: ${input}`
+// }
 
 // the es6 way also allows you to do this:
-function3 = (input) => `some value: ${input}`
+// const also can be let
+// const function3 = (input) => `some value: ${input}`
+
+// commented it all out because 

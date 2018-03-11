@@ -6,7 +6,8 @@
   "author": "TheRaeper",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "node serv.js"
+    "start": "node serv.js",
+    "lint": "./node_modules/.bin/eslint ./**/*.js"
   },
   "nodemonConfig": {
     "watch": [
@@ -22,5 +23,8 @@
     "opn": "^5.1.0",
     "pug": "^2.0.0-rc.4",
     "questions": "^0.0.6"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2"
   }
 }

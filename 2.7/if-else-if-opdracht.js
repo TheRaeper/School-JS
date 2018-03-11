@@ -9,7 +9,7 @@ if (doorgaan) {
 }
 
 if (doorgaan) {
-  creditcard = confirm(`Heb je een creditcard?`)
+  var creditcard = confirm(`Heb je een creditcard?`)
   if (creditcard) {
     creditcard = true
   }
@@ -19,7 +19,7 @@ if (doorgaan) {
 }
 
 if (doorgaan) {
-  leeftijd = parseInt(prompt(`Wat is je leeftijd?`))
+  var leeftijd = parseInt(prompt(`Wat is je leeftijd?`))
   if (leeftijd > 18) {
     leeftijd = true
   }

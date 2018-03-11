@@ -1,9 +1,9 @@
 // lab 08
 let a = [(d) => {document.write(d);document.write('<br>')},new Date()]
-Date.prototype.addDays = function(days) {
-  dat = new Date(this.valueOf())
+Date.prototype.addDays = (days) => {
+  let dat = new Date(this.valueOf())
   dat.setDate(dat.getDate() + days)
-  return dat;
+  return dat
 }
 a.push(a[1].addDays(-16))
 a.push(a[2].addDays(30))

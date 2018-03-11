@@ -5,7 +5,7 @@ weekdag.push('dinsdag')
 weekdag.push('woensdag')
 weekdag.push('donderdag')
 weekdag.push('vrijdag')
-console.log(weekdag)
+console.log('weekdagen',weekdag)
 //Opgave 23
 var team = []
 team.push({
@@ -22,12 +22,12 @@ team.push({
 })
 console.log(team)
 //Opgave 21
-document.write("<br> Opgave 21: Array aangemaakt") 
+document.write('<br> Opgave 21: Array aangemaakt') 
 //Opgave 22
-document.write("<br> Opgave 22: Elementen aangemaakt")
+document.write('<br> Opgave 22: Elementen aangemaakt')
 //Opgave 23
-document.write("<br> Opgave 23: weekdag array: " + weekdag)
-document.write("<br> Eerste element in array is: " + weekdag[0])
+document.write('<br> Opgave 23: weekdag array: ' + weekdag)
+document.write('<br> Eerste element in array is: ' + weekdag[0])
 for (let index = 0; index < team.length; index++) {
-    document.write("<br> Doelpunten van " + team[index].teamnaam + ' : ' + team[index].wedstrijden[0] + ' ' + team[index].wedstrijden[1] + ' ' + team[index].wedstrijden[2])
+    document.write('<br> Doelpunten van ' + team[index].teamnaam + ' : ' + team[index].wedstrijden[0] + ' ' + team[index].wedstrijden[1] + ' ' + team[index].wedstrijden[2])
 }
